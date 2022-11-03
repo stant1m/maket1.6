@@ -1,0 +1,223 @@
+.header{
+    @media (min-width: $screen-sm){
+      width: 320px;
+    }
+  }
+  .header__inner {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-top: 10px;
+    @media (min-width: $screen-lg){
+      background-color: $color-background;
+    }
+    p {
+      display: none;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  
+  .header__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    @media (min-width: $screen-lg){
+      top: 25px;
+      position: absolute;
+      padding: 10px;
+    }
+    @media (min-width: $screen-sm){
+      padding-top: 25px;
+    }
+  }
+  
+  .header__first_points, .header__second-points {
+    display: flex;
+    align-items: center;
+  }
+  .header__first_points{
+    @media (min-width: $screen-lg){
+      display:none;
+    }
+  }
+  .header__second-points {
+  
+    overflow: scroll;
+    width: 120px;
+    @media (max-width: $screen-md){
+      padding: 15px 0 0 0;
+    }
+    @media (min-width: $screen-md){
+        overflow: auto;
+        width: 100%;
+        justify-content: flex-end;
+      }
+  }
+  
+  .header__first_points .header__divider {
+    display: block;
+    order: 1;
+  }
+  
+.header__burger-menu, .header__logo, .header__call,
+.header__chat, .header__profile, .header__repair,
+.header__checkstatus, .header__divider {
+  margin: 0 8px 0 8px;
+  cursor: pointer;
+    @media (min-width:$screen-lg){
+      display:none;
+    }
+  }
+  .header__burger-menu {
+  width: 40px;
+  height: 40px;
+  border: #FF3E79 solid 2px;
+  border-radius: 100px;
+  background-color: #FF3E79;
+  background-image: url(/src/img/icons/burger.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+    @media (min-width: $screen-md) {
+      order: 1;
+    }
+  }
+  .header__logo {
+    @media (min-width: $screen-md) {
+      order: 2;
+    }
+  }
+  
+  .header__call {
+    @media (min-width: $screen-md) {
+      display: block;
+      margin-left: 16px;
+    }
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+  .header__call-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: #FF3E79 solid 2px;
+    border-radius: 100px;
+    background-color: #FF3E79;
+    background-image: url(/src/img/icons/phone.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header__chat {
+    @media (min-width: $screen-md) {
+      display: block;
+      margin-left: 16px;
+    }
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+  .header__chat-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: #FF3E79 solid 2px;
+    border-radius: 100px;
+    background-color: #FF3E79;
+    background-image: url(/src/img/icons/chat.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .header__profile {
+    min-width: 40px;
+  min-height: 40px;
+  border: #FF3E79 solid 2px;
+  border-radius: 100px;
+  background-color: #FF3E79;
+  background-image: url(/src/img/icons/profile.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+    @media (min-width: $screen-md) {
+      display: block;
+      margin-left: 16px;
+    }
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+  .header__repair {
+    @media (max-width: 1439px){
+    min-width: 40px;
+    min-height: 40px;
+    border: #FF3E79 solid 2px;
+    border-radius: 100px;
+    background-color: #FF3E79;
+    background-image: url(/src/img/icons/repair.svg);
+    background-position: center;
+    background-repeat: no-repeat;}
+  }
+  .repairImg {
+    @media (min-width: 1440px) {
+    min-width: 40px;
+    min-height: 40px;
+    border: #FF3E79 solid 2px;
+    border-radius: 100px;
+    background-color: #FF3E79;
+    background-image: url(/src/img/icons/repair.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }}
+  .header__checkstatus {
+    @media (max-width: 1439px){
+    min-width: 40px;
+    min-height: 40px;
+    border: #FF3E79 solid 2px;
+    border-radius: 100px;
+    background-color: #FF3E79;
+    background-image: url(/src/img/icons/checkstatus.svg);
+    background-position: center;
+    background-repeat: no-repeat;}
+  }
+  .checkstatusImg {
+    @media (min-width: 1440px) {
+    min-width: 40px;
+    min-height: 40px;
+    border: #FF3E79 solid 2px;
+    border-radius: 100px;
+    background-color: #FF3E79;
+    background-image: url(/src/img/icons/checkstatus.svg);
+    background-position: center;
+    background-repeat: no-repeat;}
+  }
+
+.header__repair,.header__checkstatus {
+    @media (min-width: $screen-lg) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 32px;
+    }
+  }
+  .header__inner p {
+    @media (min-width:$screen-lg) {
+      display: block;
+      letter-spacing: -0.2px;
+      padding-right: 8px;
+    }
+  }
+  
+  .header__nleft {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    @media (min-width: $screen-lg){
+      position: absolute;
+      left: 0;
+    }
+  }
